@@ -1,0 +1,73 @@
+.blog-list > .blog-list__entry:not(:first-child) {
+  margin-top: 25px;
+  border-top: 1px solid black; }
+.blog-list__entry h2 {
+  margin-bottom: 5px; }
+  .blog-list__entry h2__read-more {
+    font-style: italic;
+    font-size: 12px; }
+
+.container {
+  width: 1000px;
+  margin: auto;
+  background: white;
+  display: flex;
+  min-height: 100vh; }
+
+.container__primary {
+  flex-grow: 1; }
+
+.container__secondary {
+  width: 200px; }
+
+@media (max-width: 1000px) {
+  .container {
+    width: 100%; } }
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column; }
+
+  .container__secondary {
+    width: 100%; } }
+.content {
+  padding: 0 25px; }
+
+.sidebar {
+  padding: 25px;
+  background: #8A98B9;
+  color: white;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 150px; }
+  .sidebar a {
+    color: white; }
+  .sidebar__header {
+    font-size: 12px;
+    font-weight: 700; }
+
+@media (max-width: 600px) {
+  .sidebar {
+    align-items: flex-start; } }
+.welcome {
+  margin-bottom: 25px;
+  padding: 25px;
+  background: #09235E;
+  color: white; }
+  .welcome__title {
+    margin: 0; }
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: lightgray;
+  color: #02133A;
+  margin: 0; }
+
+nav ul {
+  list-style: none;
+  font-size: 12px;
+  padding: 0; }
+
+nav ul li {
+  margin-bottom: 10px; }
